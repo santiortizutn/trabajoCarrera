@@ -10,7 +10,17 @@ namespace claseTres
     {
         Ford,
         Chevrolet,
-        Honda
+        Honda,
+        Peugeot,
+        Renault,
+        Torino
+    }
+
+    public enum eFRueda
+    {
+        Michellin,
+        
+        GoodYear
     }
 
 }
