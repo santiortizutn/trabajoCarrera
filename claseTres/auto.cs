@@ -11,25 +11,25 @@ namespace claseTres
         public static int contadorDeObjetos;
         private eFabricante fabricante;
         private int kmRecorridos;
-        private static Random randomFabricante;
-        public rueda ruedaDI;
-        public rueda ruedaDD;
-        public rueda ruedaTI;
-        public rueda ruedaTD;
+        private static Random randomMarcas;
+        public rueda di;
+        public rueda dd;
+        public rueda ti;
+        public rueda td;
 
         public auto()
         {
            // this.fabricante = "Sin fabricante. ";
             
             int numero;
-            numero = randomFabricante.Next(0, 6);
+            numero = randomMarcas.Next(0, 2);
 
             this.fabricante = (eFabricante)numero;
 
-            this.ruedaDI = new rueda();
-            this.ruedaDD = new rueda();
-            this.ruedaTI = new rueda();
-            this.ruedaTD = new rueda();
+            this.di = new rueda();
+            this.dd = new rueda();
+            this.ti = new rueda();
+            this.td = new rueda();
 
             auto.contadorDeObjetos++;
         }
@@ -37,20 +37,12 @@ namespace claseTres
         static auto() // constructor static es pivado y se ejecuta en la primer llamada a la clase.
         {
             auto.contadorDeObjetos = 0;
-            randomFabricante = new Random();
+            randomMarcas = new Random();
         }
 
         public void mostrarAuto()
         {
-            Console.WriteLine("--AUTO--");
             Console.WriteLine("El fabricante: " + this.fabricante);
-            Console.WriteLine("Rueda DI: ");
-            this.ruedaDI.mostrarRueda();
-            this.ruedaDD.mostrarRueda();
-            this.ruedaTI.mostrarRueda();
-            this.ruedaTD.mostrarRueda();
-            Console.WriteLine("km recorridos: " + this.kmRecorridos);
-            Console.WriteLine();
         }
 
         public static bool compararAuto(auto a, auto b)
@@ -67,17 +59,12 @@ namespace claseTres
 
         public void volverACero()
         {
-            this.kmRecorridos = 0;
+            kmRecorridos = 0;
         }
 
         public void agregarKm(int km)
         {
-            this.kmRecorridos = this.kmRecorridos + km;
-        }
-
-        public int retornarKm()
-        {
-            return this.kmRecorridos;
+            km += km;
         }
     }
 }

@@ -4,9 +4,3 @@ D:\Ortiz progII\primeraClase\claseTres\bin\Debug\claseTres.pdb
 D:\Ortiz progII\primeraClase\claseTres\obj\Debug\claseTres.exe
 D:\Ortiz progII\primeraClase\claseTres\obj\Debug\claseTres.pdb
 D:\Ortiz progII\primeraClase\claseTres\obj\Debug\claseTres.csprojResolveAssemblyReference.cache
-D:\Ortiz progII\trabajoCarrera\claseTres\bin\Debug\claseTres.exe.config
-D:\Ortiz progII\trabajoCarrera\claseTres\obj\Debug\claseTres.exe
-D:\Ortiz progII\trabajoCarrera\claseTres\obj\Debug\claseTres.pdb
-D:\Ortiz progII\trabajoCarrera\claseTres\bin\Debug\claseTres.exe
-D:\Ortiz progII\trabajoCarrera\claseTres\bin\Debug\claseTres.pdb
-D:\Ortiz progII\trabajoCarrera\claseTres\obj\Debug\claseTres.csprojResolveAssemblyReference.cache

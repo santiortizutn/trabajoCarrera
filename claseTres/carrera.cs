@@ -15,12 +15,9 @@ namespace claseTres
         public auto autoCinco;
         public auto autoSeis;
         public Random randomKm;
-        public int maximo = 0;
-        public int minimo = 0;
 
         public carrera()
         {
-            randomKm = new Random();
             this.autoUno = new auto();
             this.autoDos = new auto();
             this.autoTres = new auto();
@@ -33,16 +30,12 @@ namespace claseTres
 
         public void mostrarCarrera()
         {
-            this.porTiempo(10);
             this.autoUno.mostrarAuto();
             this.autoDos.mostrarAuto();
             this.autoTres.mostrarAuto();
             this.autoCuatro.mostrarAuto();
             this.autoCinco.mostrarAuto();
             this.autoSeis.mostrarAuto();
-
-            Console.WriteLine("Maximo km recorridos: " + this.maximo);
-            Console.WriteLine("Minimo km recorridos: " + this.minimo);
 
         }
 
@@ -58,39 +51,6 @@ namespace claseTres
                 this.autoCinco.agregarKm(randomKm.Next(10, 100));
                 this.autoSeis.agregarKm(randomKm.Next(10, 100));
             }
-
-            maximo = this.autoUno.retornarKm();
-            minimo = this.autoUno.retornarKm();
-
-            if (this.autoDos.retornarKm() < minimo)
-                minimo = this.autoDos.retornarKm();
-
-            if (this.autoDos.retornarKm() > maximo)
-                maximo = this.autoDos.retornarKm();
-
-            if (this.autoTres.retornarKm() < minimo)
-                minimo = this.autoTres.retornarKm();
-
-            if (this.autoTres.retornarKm() > maximo)
-                maximo = this.autoTres.retornarKm();
-
-            if (this.autoCuatro.retornarKm() < minimo)
-                minimo = this.autoCuatro.retornarKm();
-
-            if (this.autoCuatro.retornarKm() > maximo)
-                maximo = this.autoCuatro.retornarKm();
-
-            if (this.autoCinco.retornarKm() < minimo)
-                minimo = this.autoCinco.retornarKm();
-
-            if (this.autoCinco.retornarKm() > maximo)
-                maximo = this.autoCinco.retornarKm();
-
-            if (this.autoSeis.retornarKm() < minimo)
-                minimo = this.autoSeis.retornarKm();
-
-            if (this.autoSeis.retornarKm() > maximo)
-                maximo = this.autoSeis.retornarKm();
  
         }
     }
